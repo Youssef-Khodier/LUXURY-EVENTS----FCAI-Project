@@ -11,12 +11,11 @@ const observer = new IntersectionObserver((entries, observer) => {
   threshold: 0.2
 });
 
-  
 images.forEach(img => {
   observer.observe(img);
 });
 
-
+// Navigation buttons functionality
 document.getElementById('signIn').addEventListener('click', function() {
   window.location.href = '../contact us  log in sign up/contact us _ log in _sign up/log in .html';
 });
